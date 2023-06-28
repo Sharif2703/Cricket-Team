@@ -1,0 +1,35 @@
+//GET PLAYERS API
+GET http://localhost:3000/players/
+
+###
+
+//POST PLAYER DETAILS API
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+###
+
+//Get individual player Details by using GET method
+GET http://localhost:3000/players/5/
+###
+
+//Update individuals data using PUT method
+PUT http://localhost:3000/players/2/
+Content-Type: application/json 
+
+{
+  "playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
+}
+###
+
+//Remove a player details using DELETE method
+DELETE http://localhost:3000/players/5/
+###
